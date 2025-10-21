@@ -1,0 +1,8 @@
+//for  basic array
+
+public class Main {
+    public static void main(String[] args) {
+        int resut = ( int) Math.ceil(2.2F);
+        System.out.println(resut);
+    }
+}
