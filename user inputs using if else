@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main4 {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter temperature: ");
+        int temp = input.nextInt();
+
+        if (temp > 32) {
+            System.out.println("It's a hot day.");
+        } else if (temp > 20 && temp <= 30) {
+            System.out.println("It's a lovely day.");
+        } else {
+            System.out.println("It's a cold day.");
+        }
+
+        input.close();
+    }
+}
