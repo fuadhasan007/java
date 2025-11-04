@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the Student class using the default constructor
+        Student s1 = new Student();
+        s1.setName("Alex");
+        s1.setID(100);
+
+        // Printing out the student's details
+        System.out.println("Name: " + s1.getName());
+        System.out.println("ID: " + s1.getID());
+        System.out.println("University: " + Student.uni);
+        System.out.println("Department: " + Student.dept_initialize());
+
+        // Creating another Student object using the parameterized constructor
+        Student s2 = new Student("John", 102);
+        System.out.println("Info:");
+        s2.Display();
+
+        // Updating the ID of the second student and displaying it again
+        s2.setID(101);
+        s2.Display();
+    }
+}
